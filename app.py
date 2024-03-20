@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import pandas as pd
+!pip install openpyxl.
+
 
 # Load the dataset containing influencers data
 df = pd.read_excel(
