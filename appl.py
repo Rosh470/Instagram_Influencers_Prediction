@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load the dataset containing influencers data
-df = pd.read_excel("instagram_inluencers.xlsx")
+df = pd.read_excel("new_data.xlsx")
 
 # Get unique values for country, Category 1, and Category 2
 unique_countries = df["country"].unique().tolist()
