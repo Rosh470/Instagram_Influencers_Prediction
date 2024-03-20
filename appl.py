@@ -27,7 +27,7 @@ def predict_potential_reach(country, categories):
     # Filter the dataset based on selected country and categories
     filtered_df = df[df["country"] == country]
     for category in categories:
-        filtered_df = filtered_df[filtered_df["Categories"].str.contains(category)]
+        filtered_df = filtered_df[filtered_df["Category_1"].str.contains(category) | filtered_df["Category_2"].str.contains(category)]
 
     # Load the trained Linear Regression model
     with open("linear_regression_model.pkl", "rb") as file:
