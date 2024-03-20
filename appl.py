@@ -6,7 +6,7 @@ import pandas as pd
 df = pd.read_excel("instagram_inluencers.xlsx")
 
 # Get unique values for country, Category 1, and Category 2
-unique_countries = df["Country"].unique().tolist()
+unique_countries = df["country"].unique().tolist()
 unique_categories = set(
     df["Category_1"].unique().tolist() + df["Category_2"].unique().tolist()
 )
